@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA DELLA BELLEZA</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+
+<body>
+  
+    <header>
+        <div class="myLogo">
+            <img src="/images.html/logo w.jpg" alt="" width="60" height="60">
+            <h1 style="text-align:center; font-family: Stencil Std, fantasy;">CASA DELLA BELLEZA </h1>
+        </div>
+       
+            <div class="tabs">
+              <button class="tablinks" onclick=" openTab (event,'Home')">Home</button>
+                <button class="tablinks" onclick=" openTab (event,'Shop')">Shop</button>
+                <button class="tablinks" onclick=" openTab (event,'About Us')">About Us</button>
+                <button class="tablinks" onclick=" openTab (event,'Services')">Services</button>
+                <button class="tablinks" onclick=" openTab (event,'Contact Us')">Contact Us</button>
+            </div>
+            <div id="Home" class="tabcontent" >
+              <a href="index.html">Go Home</a>
+          </div>
+            <div id="Shop" class="tabcontent" >
+                <a href="index3.html">Visit Shop</a>
+            </div>
+            <div id="About Us" class="tabcontent" >
+              <a href="index4.html">Know more About Us</a>
+            </div>
+            <div id="Services" class="tabcontent" >
+              <a href="index2.html">See Our Services</a>
+            </div>
+            <div id="Contact Us" class="tabcontent" >
+              <a href="index6.html">Contact Us</a>
+            </div>
+
+       
+        <script>// For Tabs
+            function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+        </script>
+    </header>
+    
+    <section class="topintro" id="home">
+      <h1 class="sectitle sectitle_intro">
+        <h3><strong>Welcome to Casa Della Belleza</strong></h3>
+      </h1>
+
+      <p class="secsubtitle secsubtitle_intro"><strong>These are the interior designs of Casa Della Belleza</strong></p>
+
+      <img src="images.html/design.jpg" width= "350" height="220" alt="beauty parlour interior" class="first_img">
+      <img src="images.html/hairdressing.jpg" width= "350" height="220" alt="beauty parlour interior" class="first_img">
+      <img src="images.html/interior.jpg" width= "350" height="220" alt="beauty parlour interior" class="first_img">
+      <img src="images.html/mass.jpg" width= "350" height="220" alt="beauty parlour interior" class="first_img">
+  </section>
+
+  <section class="About_Us">
+  <h2 style="text-align: center;">About Us</h2>
+  <p class="sucsebtitle secsubtitle secsubtitle_intro" style="text-align: center; font-size: 25px;font-family:
+   'Courier New', Courier, monospace;">It is our goal to exceed your expectations.
+    Come experience a family atmosphere where you <strong> come as guests </strong>and <strong>leave as friends.</strong>
+     Our staff is highly trained with diversity in all aspects. 
+     Come let us pamper you and provide you with quality services. 
+     Our team of professional, talented, and continuously educated stylists are committed 
+    to working with each and every client to achieve the look that is best suited for them.</p>
+</section>
+
+<section class="Team">
+  <h2 style="text-align: center;">Our Team</h2>
+  <img src="images.html/Charity.jpg" alt="teammembers" class="a" width=220px; height="220px" ><p class="Title1">Tattoo Artist</p>
+  <img src="images.html/jemimah.jpg" alt="teammembers"  class="b" width=220px; height="220px"><p class="Title2">Makeup Artist</p>
+  <img src="images.html/frankline.jpg" alt="teammembers"  class="c" width=220px; height="220px"><p class="Title3">Barber</p>
+  <img src="images.html/Alvin.jpg" alt="teammembers"  class="d" width=220px; height="220px"><p class="Title3">HairDresser</p>
+
+</section>
+
+  <section class="Customer_gallery">
+    <h2 style="text-align: center;">Customer Gallery</h2>
+    <div>
+      <img class="mySlides" src="images.html/tatoos.jpg" style="width:500px; height: 300px;">
+      <img class="mySlides" src="images.html/gallery men.jpg" style="width:500px; height: 300px;">
+      <img class="mySlides" src="images.html/dredlocks.jpg" style="width:500px; height: 300px;">
+      <img class="mySlides" src="images.html/men.jpg" style="width:500px; height: 300px;">
+      
+  <a href="index5.html" style="float: none; ">See More</a>
+    </div>
+    <script> // For Slideshow
+     var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+      </script>
+</section>
+   
+
+
+<footer>
+<section class="socialmedia_links">
+  <div class=media>
+    
+    <h4>Connect With Us</h4> 
+    <ul>
+    <li>
+      <a class="fa fa-snapchat-square"  href="https://snapchat.com"></a>
+    </li>
+    <li> 
+      <a class="fa fa-youtube-play" href="https://youtube.com"></a>
+    </li>
+    <li class="socialitem">
+      <a class="fa fa-twitter" href="https://twitter.com"></a>
+  </li>
+  <li class="socialitem">
+    <a class="fa fa-facebook-square" href="https://facebook.com"></a>
+  </li>
+    <li>
+       <a  class="fa fa-instagram"href="https://instagram.com"></a> 
+    </li>
+    <li>  <a class="fa fa-envelope" href="https://gmail.com"></a> </li>
+    </ul>
+    </div>
+    
+</section>
+</footer>
+</body>
+</html>
